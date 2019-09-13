@@ -8,6 +8,7 @@ def count_th(word):
 
     # find the first occurance of "th", 
     x = word.find('th')
+    
     if x != -1:
         count += 1
         count += count_th(word[x+2:])
